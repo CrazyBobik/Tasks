@@ -1,7 +1,9 @@
 package ru.acmp.BeceJIbIu_Ko4kA._0011;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created on 19.03.2015.
@@ -17,27 +19,27 @@ public class Util {
         return removeNotValid(permutate(sum, step), sum).size();
     }
 
-    private static List<String> permutate(int length, int step){
-        List<String> permutationList = new ArrayList<>();
+    private static Set<String> permutate(int length, int step){
+        Set<String> permutationSet = new HashSet<>();
         if (length == 1){
             for (int i = 0; i <= step; i++) {
-                permutationList.add("" + i);
+                permutationSet.add("" + i);
             }
         } else {
-            List<String> list = permutate(length - 1, step);
-            for (String s : list) {
+            Set<String> set = permutate(length - 1, step);
+            for (String s : set) {
                 for (int i = 0; i <= step; i++) {
-                    permutationList.add(s + " " + i);
+                    permutationSet.add(s + " " + i);
                 }
             }
         }
 
-        return permutationList;
+        return permutationSet;
     }
 
-    private static List<String> removeNotValid(List<String> list, int length){
-        List<String> correctList = new ArrayList<>();
-        for (String s : list) {
+    private static Set<String> removeNotValid(Set<String> set, int length){
+        Set<String> correctSet = new HashSet<>();
+        for (String s : set) {
             String[] arrString = s.split(" ");
             int sum = 0;
             for (String s1 : arrString) {
@@ -46,11 +48,10 @@ public class Util {
 
             if (sum == length){
                 String temp = s.replaceAll("0", "").replaceAll(" ", "");
-                if (!correctList.contains(temp))
-                    correctList.add(temp);
+                correctSet.add(temp);
             }
         }
 
-        return correctList;
+        return correctSet;
     }
 }

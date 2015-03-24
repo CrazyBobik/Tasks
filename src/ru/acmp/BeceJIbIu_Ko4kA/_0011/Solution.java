@@ -31,6 +31,7 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws FileNotFoundException {
+        long begin = System.currentTimeMillis();
         Scanner in = new Scanner(new FileInputStream("d:\\input.txt"));
         int step = in.nextInt();
         int sum = in.nextInt();
@@ -39,5 +40,7 @@ public class Solution {
         PrintWriter out = new PrintWriter(new FileOutputStream("d:\\output.txt"));
         out.println(Util.calc(step, sum));
         out.close();
+        long end = System.currentTimeMillis();
+        System.out.println(end - begin);
     }
 }
