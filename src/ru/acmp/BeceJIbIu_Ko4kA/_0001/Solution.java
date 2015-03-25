@@ -15,6 +15,9 @@ import java.util.Scanner;
  *
  *  Выходные данные:
  *   В единственную строку выходного файла OUTPUT.TXT нужно вывести одно целое число — сумму чисел А и В.
+ *
+ *   	INPUT.TXT | OUTPUT.TXT
+ *   	2 3	      | 5
  */
 
 public class Solution {

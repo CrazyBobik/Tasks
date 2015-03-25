@@ -31,6 +31,11 @@ import java.util.Scanner;
  *
  *  Выходные данные
  *  В выходной файл OUTPUT.TXT нужно вывести значение полученной Васей разности.
+ *
+ *  INPUT.TXT | OUTPUT.TXT
+ *  5	      | 594
+ *  2         | 297
+ *  7	      | 792
  */
 
 public class Solution {

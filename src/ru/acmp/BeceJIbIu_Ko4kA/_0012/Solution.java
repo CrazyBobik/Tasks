@@ -27,6 +27,14 @@ import java.util.Scanner;
  * Выходные данные
  * В выходной файл OUTPUT.TXT нужно вывести количество дачников, приземлившихся на свой участок.
  *
+ * INPUT.TXT              | OUTPUT.TXT
+ * -----------------------|------------
+ * 3                      | 2
+ * 6 6 3 6 6 9 8 7 5 4    |
+ * 13 5 9 2 9 8 12 8 12 2 |
+ * 3 2 2 1 2 3 6 3 6 1 	  |
+ * -----------------------|------------
+ *
  * Решено!!!))
  */
 
@@ -44,6 +52,7 @@ public class Solution {
         }
         in.close();
 
+        System.out.println(sum);
 
         PrintWriter out = new PrintWriter(new FileOutputStream("d:\\output.txt"));
         out.println(sum);

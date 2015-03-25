@@ -14,6 +14,9 @@ import java.util.Scanner;
  *
  *   Выходные данные
  *   В единственную строку выходного файла OUTPUT.TXT нужно вывести одно целое число — сумму чисел от 1 до N.
+ *
+ *   INPUT.TXT | OUTPUT.TXT
+ *   5	       | 15
  */
 
 public class Solution {

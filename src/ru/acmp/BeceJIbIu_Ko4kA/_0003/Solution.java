@@ -23,6 +23,11 @@ import java.util.Scanner;
  *
  *  Выходные данные
  *  В выходной файл OUTPUT.TXT выведите одно натуральное число - A^2 без лидирующих нулей.
+ *
+ *  INPUT.TXT | OUTPUT.TXT
+ *  5	      | 25
+ *  75	      | 5625
+ *  4255	  | 18105025
  */
 
 public class Solution {
